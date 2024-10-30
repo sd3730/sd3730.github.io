@@ -6,17 +6,24 @@ output:
     vertical_layout: fill
 ---
 
-### Load required packages and dataset
 ```{r setup, include = FALSE}
 library(flexdashboard)
 library(plotly)
 library(dplyr)
 library(p8105.datasets)
+library(ggplot2)
 
 data("instacart")
 
 instacart = instacart %>%
   sample_n(1000)
+
+aisle_summary <- instacart %>%
+  group_by(aisle) %>%
+  summarise(order_count = n(), avg_days_since_prior_order = mean(days_since_prior_order, na.rm = TRUE)) %>%
+  arrange(desc(order_count))
+
+top_aisles <- aisle_summary[1:5, ]
 ```
 
 Row {.tabset .tabset-fade}
@@ -24,7 +31,7 @@ Row {.tabset .tabset-fade}
 
 ### Scatter Plot
 
-```{r scatter-plot}
+```{r scatter-plot, messageg = FALSE}
 plot_ly(data = instacart, x = ~days_since_prior_order, y = ~add_to_cart_order, type = 'scatter', mode = 'markers',
         marker = list(size = 10, opacity = 0.5, line = list(width = 0.5, color = 'white'))) %>%
   layout(title = "Scatter Plot of Days Since Prior Order vs. Add to Cart Order",
@@ -32,4 +39,13 @@ plot_ly(data = instacart, x = ~days_since_prior_order, y = ~add_to_cart_order, t
          yaxis = list(title = "Add to Cart Order"))
 ```
 
+### Bar Plot
+```{r bar-plot, message = FALSE}
+bar_plot <- ggplot(top_aisles, aes(x = reorder(aisle, -order_count), y = order_count)) +
+  geom_bar(stat = "identity", aes(fill = aisle)) +
+  labs(title = "Top 5 Aisles by Number of Orders", x = "Aisle", y = "Count") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))
 
+ggplotly(bar_plot)
+```
