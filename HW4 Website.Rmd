@@ -4,7 +4,6 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: flatly
 ---
 
 ## About Me
@@ -27,7 +26,6 @@ I graduated from the University of Minnesota in 2021 with a bachelors in psychol
 
 Check out my GitHub for interesting projects and connect with me through email or LinkedIn
 
-* [Email](sd3730@cumc.columbia.edu)
 * [GitHub](https://github.com/sd3730)
 * [LinkedIn](https://www.linkedin.com/in/stacey-dai/)
 
