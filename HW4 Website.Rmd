@@ -7,11 +7,12 @@ output:
     theme: flatly
 ---
 
-## Introduction
+## About Me
 
-Hi, my name is Stacey and I am a second year MPH student in the Epidemiology department. 
+Hi, my name is Stacey and I am a second year MPH student in the Epidemiology department. My hobbies include crochet, photography, and drawing. I have a dog! Her name is Coco.
 
 ![](images/aboutme.jpg)
+![](images/mydog.jpg)
 
 
 ## Academic and Professional Background
@@ -22,8 +23,10 @@ I graduated from the University of Minnesota in 2021 with a bachelors in psychol
 
 [Academic and Professional Experience](resume.html)
 
-## About me
+## Contact Me
 
-My hobbies include crochet, photography, and drawing. I have a dog! Her name is Coco.
+Check out my GitHub for interesting projects and connect with me through email or LinkedIn
 
-![](images/mydog.jpg)
+* [Email](sd3730@cumc.columbia.edu)
+* [GitHub](https://github.com/sd3730)
+* [LinkedIn](https://www.linkedin.com/in/stacey-dai/)
