@@ -7,13 +7,22 @@ output:
     theme: flatly
 ---
 
-# About Me
+## Introduction
 
 Hi, my name is Stacey and I am a second year MPH student in the Epidemiology department. 
 
 ![](images/aboutme.jpg)
 
+
+## Academic and Professional Background
+
 I graduated from the University of Minnesota in 2021 with a bachelors in psychology and minors in public health and learning technologies.
+
+**If you would like to learn more about my academic and professional experiences, click below**
+
+[Academic and Professional Experience](resume.html)
+
+## About me
 
 My hobbies include crochet, photography, and drawing. I have a dog! Her name is Coco.
 
