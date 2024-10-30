@@ -1,0 +1,12 @@
+name: "Yay internet!"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - icon: fa-envelope fa-lg
+      href: mailto:<sd3730@cumc.columbia.edu>
+    - icon: fa-github fa-lg
+      href: https://github.com/sd3730/
+output:
+  html_document:
+    theme: flatly
