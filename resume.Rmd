@@ -1,5 +1,5 @@
 ---
-title: "Welcome to my Website"
+title: "Academic and Professional Experience"
 output: 
   html_document:
     toc: true
@@ -7,14 +7,30 @@ output:
     theme: flatly
 ---
 
-# About Me
+## Academic Experience
 
-Hi, my name is Stacey and I am a second year MPH student in the Epidemiology department. 
+**Columbia University** - New York, NY <br>
+*Mailman School of Public Health, Master's in Public Health* <br>
+September 2023 - May 2025 (expected)
 
-![](images/aboutme.jpg)
+**University of Minnesota, Twin Cities** - Minneapolis, MN <br>
+*College of Liberal Arts, Bachelor's of Science* <br>
+September 2017 - May 2021
 
-I graduated from the University of Minnesota in 2021 with a bachelors in psychology and minors in public health and learning technologies.
+## Professional Experience
 
-My hobbies include crochet, photography, and drawing. I have a dog! Her name is Coco.
+**Graduate Research Assistant** <br>
+*Columbia University School of Nursing* <br>
+January 2024 - present
 
-![](images/mydog.jpg)
+**Research Coordinator** <br>
+*Georgetown University Cancer Prevention and Control* <br>
+November 2021 - May 2023
+
+**Undergraduate Research Assistant** <br>
+*University of Minnesota, Center of Research and Outreach Lab* <br>
+May 2019 - October 2021
+
+**Digital Content and Social Media Strategist** <br>
+*Achieving Cures Together* <br>
+April 2021 - October 2021
