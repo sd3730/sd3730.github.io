@@ -30,3 +30,10 @@ Check out my GitHub for interesting projects and connect with me through email o
 * [Email](sd3730@cumc.columbia.edu)
 * [GitHub](https://github.com/sd3730)
 * [LinkedIn](https://www.linkedin.com/in/stacey-dai/)
+
+## Homework 4
+
+This is Homework 4 problem 2 for the P8105 Data Science I course.
+
+[Problem 2](Problem2.html)
+
