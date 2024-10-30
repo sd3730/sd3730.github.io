@@ -13,4 +13,6 @@ install.packages("flexdashboard")
 install.packages("plotly")
 install.packages("dplyr")
 install.packages("p8105.datasets")
+
+data("instacart")
 ```
