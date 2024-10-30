@@ -1,0 +1,16 @@
+---
+title: "Problem 2"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: flatly
+---
+
+### Load required packages
+```{r setup, include = FALSE}
+install.packages("flexdashboard")
+install.packages("plotly")
+install.packages("dplyr")
+install.packages("p8105.datasets")
+```
