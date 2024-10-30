@@ -1,18 +1,35 @@
 ---
 title: "Problem 2"
 output: 
-  html_document:
-    toc: true
-    toc_float: true
-    theme: flatly
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
 
-### Load required packages
+### Load required packages and dataset
 ```{r setup, include = FALSE}
-install.packages("flexdashboard")
-install.packages("plotly")
-install.packages("dplyr")
-install.packages("p8105.datasets")
+library(flexdashboard)
+library(plotly)
+library(dplyr)
+library(p8105.datasets)
 
 data("instacart")
+
+instacart = instacart %>%
+  sample_n(1000)
 ```
+
+Row {.tabset .tabset-fade}
+-------------------------------------
+
+### Scatter Plot
+
+```{r scatter-plot}
+plot_ly(data = instacart, x = ~days_since_prior_order, y = ~add_to_cart_order, type = 'scatter', mode = 'markers',
+        marker = list(size = 10, opacity = 0.5, line = list(width = 0.5, color = 'white'))) %>%
+  layout(title = "Scatter Plot of Days Since Prior Order vs. Add to Cart Order",
+         xaxis = list(title = "Days Since Prior Order"),
+         yaxis = list(title = "Add to Cart Order"))
+```
+
+
