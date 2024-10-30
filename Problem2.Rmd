@@ -31,6 +31,8 @@ Row {.tabset .tabset-fade}
 
 ### Scatter Plot
 
+This scatter plot shows the relationship between days since the prior order and the order in which products were added to the cart.
+
 ```{r scatter-plot}
 plot_ly(data = instacart, x = ~days_since_prior_order, y = ~add_to_cart_order, type = 'scatter', mode = 'markers',
         marker = list(size = 10, opacity = 0.5, line = list(width = 0.5, color = 'white'))) %>%
@@ -40,6 +42,9 @@ plot_ly(data = instacart, x = ~days_since_prior_order, y = ~add_to_cart_order, t
 ```
 
 ### Bar Plot
+
+This bar plot displays the number of orders grouped by aisle.
+
 ```{r bar-plot}
 bar_plot = ggplot(top_aisles, aes(x = reorder(aisle, -order_count), y = order_count)) +
   geom_bar(stat = "identity", aes(fill = aisle)) +
@@ -51,6 +56,9 @@ ggplotly(bar_plot)
 ```
 
 ### Box Plot
+
+This box plot illustrates the distribution of days since the prior order for each aisle.
+
 ```{r box-plot}
 box_plot = plot_ly(data = instacart, 
                     y = ~days_since_prior_order, 
